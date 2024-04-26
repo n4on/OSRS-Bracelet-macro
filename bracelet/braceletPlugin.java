@@ -18,6 +18,8 @@ import java.awt.*;
 public class braceletPlugin extends Plugin {
     @Inject
     private braceletConfig config;
+    @Provides
+    braceletConfig braceletConfig(ConfigManager configManager) {return configManager.getConfig(braceletConfig.class);}
 
     @Inject
     private OverlayManager overlayManager;

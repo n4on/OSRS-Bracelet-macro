@@ -16,7 +16,7 @@ public interface braceletConfig extends Config {
             section = generalSection
     )
     default String GUIDE() {
-        return "Stand near bank in Edgeville with required materials in bank.";
+        return "Stand near bank in Edgeville with required materials in bank and an empty inventory.";
     }
 
     @ConfigSection(
